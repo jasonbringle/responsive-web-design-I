@@ -95,9 +95,9 @@ nav a{
 }
 
 .services-header-img{
-	display:inline;
-	width: 100%;
-	padding: 20px 0px;
+    display:flex;
+    width: 100%;
+	padding: 20px 0px;\
 }
 
 .top-header{
@@ -127,7 +127,6 @@ h2{
 	display:flex;
 	justify-content:center; 
 	width: 50%; 
-	padding: ;
 	font-size: 20px;
 	background-color:white;
 	border: 1px solid black;
@@ -151,9 +150,8 @@ h2{
 
 .circle{
 	display: flex;
-	flex-direction:;
 	justify-content: flex-end;
-	align-content: ;
+
 }
 
 .upper-section{
@@ -170,8 +168,8 @@ h2{
 }
 
 .middle-img{
-	dislay:inline;
-	width:100%;
+    display:flex;
+    width: 100%;
 }
 
 
@@ -303,8 +301,6 @@ footer{
     }
     header{
         display: flex;
-        justify-items: ;
-
     }
 
     .top-content{
