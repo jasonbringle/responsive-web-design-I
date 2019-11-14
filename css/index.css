@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container{
 	margin:30px;
-	padding: 0px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
 		}
 
 header{
@@ -76,44 +76,47 @@ header{
 	justify-content: flex-start;
 		}
 
-nav{
-	display:flex;
-	flex-direction:row;
-	justify-content: space-between;
-		}
-.logo{
-	display: flex;
-		}
+.nav-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+}
 
 nav a{
-	text-decoration: none;
+    text-decoration: none;
 	color: gray;
-	font-size:20px;
-		}
+    font-size:18px;
+}
 
 .services-header-img{
 	display:inline;
 	width: 100%;
 	padding: 20px 0px;
-		}
+}
 
 .top-header{
 	display:flex;
 	flex-direction: column;
 	padding: 0px 0px 10px;
 	font-size: 11px;
-		}
+}
 
 h1 {
 	/* padding: 20px; */
 	font-size: 90px;
 	display: block;
 	text-align: center;
-		}
+}
 
 h2{
 	font-size: 20px;
-		}
+}
 
 /* .upper-section header .button{
 	display:flex;
@@ -129,8 +132,8 @@ h2{
 	background-color:white;
 	border: 1px solid black;
 	text-align: center;
-	margin: 0 auto;
-		}
+    margin: 0 auto;
+}
 
 .learn-button{
 	display:flex;
@@ -144,37 +147,37 @@ h2{
 	border: 1px solid black;
 	/* text-align: center; */
 	margin: 10px 0px;
-		}
+}
 
 .circle{
 	display: flex;
 	flex-direction:;
 	justify-content: flex-end;
 	align-content: ;
-		}
+}
 
 .upper-section{
 	display:flex;
 	flex-direction:row;
 	justify-content:space-around;
 	padding: 20px;
-		}
+}
 .top-content{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding:20px 0px;
-		}
+}
 
 .middle-img{
 	dislay:inline;
 	width:100%;
-		}
+}
 
 
 .features{
 	padding: 0px 10px 0px 0px;
-		}
+}
 
 /* .about{
 	display:flex;
@@ -185,31 +188,32 @@ h2{
 	flex-direction: row;
 	justify-content: space-between;
 	padding:20px 0px;
-		}
+}
 
 .services{
 	padding: 0px 10px 0px 0px;
-		}
+}
 
 .product{
 	padding: 0px 10px 0px 0px;
-		}
+}
 
 .vison{
 	padding: 0px 10px 0px 0px;
-		}
+}
 
 footer{
 	display: flex;
 	justify-content: center;
 	font-size:10px ;
-		}
+}
+
 .content-boxes{
 	display:flex;
 	flex-direction: row;
 	padding: 15px 0px;
 	justify-content: space-between;
-		}
+}
 
 .content-box{
 	display: flex;
@@ -222,13 +226,13 @@ footer{
 	padding:15px;
 	font-size:11px;
 	line-height: 12px;
-		}
+}
 
  .bottom{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-		} 
+} 
 
 .bottom-left-text{
 	display:flex;
@@ -237,16 +241,83 @@ footer{
 	width: 48%;
 	font-size: 10px;
 	margin: 20px 0px;
-	
-		} 
+} 
 
 .services-img{
 	display:flex;
 	width: 47%;
 	margin: 20px 0px;
-		}
+}
 
 .services-info-img{
 	width: 100%;
 	height:100%;
-		}
+}
+
+@media (max-width: 800px){
+    .circle {
+    display: none;
+    }
+    .nav-bar{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    nav{
+    width: 100%;
+    }
+    .logo{
+        padding: 0px 0px 60px 0px ;
+        
+    }
+    header{
+        /* padding:50px; */
+    }
+}
+
+@media (max-width:500px){
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid black;
+    }
+    nav a{
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    header{
+        display: flex;
+        justify-items: ;
+
+    }
+
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .lower-content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .features{
+        padding:0px 0px 20px 0px;
+    }
+
+    .about{
+        padding:0px 0px 20px 0px;
+    }
+    
+    .services{
+        padding:0px 0px 20px 0px;
+    }
+     .product{
+        padding:0px 0px 20px 0px;
+     }
+}
